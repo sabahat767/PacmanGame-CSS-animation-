@@ -1,0 +1,135 @@
+.road
+{
+width: 300px;
+height: 5px;
+top: 20%;
+left: 90%;
+position: fixed;
+border-top: 2px dashed white;
+animation: road 8s infinite;
+
+}
+@keyframes road{
+    /* 0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(-50%);
+    } % is for multi points from to is for two points */
+    from{
+        transform: translateX(0%);
+
+    }
+    to{
+        transform: translateX(-550%);
+
+    }
+}
+
+.road1
+{
+width: 300px;
+height: 5px;
+top: 40%;
+left: 98%;
+position: fixed;
+border-top: 2px dashed white;
+animation:road1 10s infinite;
+}
+@keyframes road1{
+from{
+    transform: translateX(0%);
+}
+to{
+    transform: translateX(-550%);
+}
+}
+
+.pacman{
+    background-color: chocolate;
+    width: 80px;
+    height: 80px;
+    margin-top: 30%;
+    margin-left: 40%;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce{
+    0%, 20%, 40%, 60%, 100% {transform: translateY(0);} /*0% p isko jga p rhko 50% p akr isko nechy phenkdo or 100% p dbra jga p leao*/
+   50% {transform: translateY(-25px);} 
+  
+}
+.eye
+{
+background-color:black;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+left: 38%;
+top: 28%;
+
+position: absolute;
+display: inline-block;
+
+
+}
+.mouth
+{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 35.5px solid black;
+    border-bottom: 25px solid transparent;
+    top: 30%;
+    left: 55%;
+    
+    position: absolute;
+}
+.food
+{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    left: 95%;
+    top: 55%;
+    position: absolute;
+    border-radius: 50%;
+    animation: foody 1s infinite ;
+}
+@keyframes foody{
+    from{
+        transform: translateX(0%);
+        opacity: 1;
+
+    }
+    to{
+        transform: translateX(-100%);
+opacity: 0;
+    }
+}
+.mainroad
+{
+    bottom: 0px;
+width: 100%;
+height: 10px;
+top: 83%;
+position: relative;
+border-top: 15px dashed white;
+animation: roadanim linear 2s infinite;
+
+}
+@keyframes roadanim {
+    from{
+        transform: translateX(0px);
+
+    }
+    to{
+        transform: translateX(-5%);
+
+    }
+}
